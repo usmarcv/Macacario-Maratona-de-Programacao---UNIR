@@ -11,8 +11,9 @@
 \usepackage{tikz,fullpage}
 \usepackage{listings} % exibe codigos de linguagens
 \usepackage{showexpl} % exibe codigos de figuras
-
+\usepackage[labelfont=bf]{caption}
 \usepackage{tikz,fullpage}
+\usepackage{copyrightbox}
 \usepackage{listings} % exibe codigos de linguagens
 \usepackage{showexpl} % exibe codigos de figuras
 
@@ -20,8 +21,7 @@
 \renewcommand{\lstlistingname}{Algoritmo}% Listing -> Algorithm
 \renewcommand{\lstlistlistingname}{Lista de \lstlistingname s}% List of Listings -> List of Algorithms
 
-\lstdefinestyle{CPP}
-{
+\lstdefinestyle{CPP}{
   language=C++,
   alsolanguage={[Sharp]C},
   basicstyle=\ttfamily\small, 
