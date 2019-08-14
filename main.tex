@@ -1,0 +1,43 @@
+\documentclass{article}
+
+ \input{myconfig}
+
+
+
+\title{Macacário Maratona de Programação}
+\date{2019}
+\author{Grupo de Robótica e Maratona de Programação}
+
+\makeatletter
+\newcommand\mymaketitle{%
+  \begin{titlepage}
+    \null\vfil\vskip 40\p@
+    \begin{center}
+      {\LARGE \@title \par}
+      \vskip 2.5em
+      {\large \lineskip .75em \@author \par}
+      \vskip 1.5em
+      {\large \@date \par}
+    \end{center}\par
+    \@thanks
+    \vfil\null
+  \end{titlepage}
+}
+\makeatother
+\begin{document}
+    \mymaketitle
+    \newpage
+    \thispagestyle{empty}
+    \listoffigures
+    \newpage
+    \thispagestyle{empty}
+    \lstlistoflistings
+    \newpage
+    \thispagestyle{empty}
+    \tableofcontents
+    
+    
+    \input{introducao.tex}
+    
+    \input{miscelanea.tex}
+\end{document}

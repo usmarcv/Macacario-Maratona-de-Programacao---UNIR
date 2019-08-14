@@ -1,0 +1,91 @@
+\usepackage[top=3cm,left=3cm,right=2cm,bottom=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{tikz,fullpage}
+\usepackage{listings} % exibe codigos de linguagens
+\usepackage{showexpl} % exibe codigos de figuras
+
+\usepackage{tikz,fullpage}
+\usepackage{listings} % exibe codigos de linguagens
+\usepackage{showexpl} % exibe codigos de figuras
+
+
+\renewcommand{\lstlistingname}{Algoritmo}% Listing -> Algorithm
+\renewcommand{\lstlistlistingname}{Lista de \lstlistingname s}% List of Listings -> List of Algorithms
+
+\lstdefinestyle{CPP}
+{
+  language=C++,
+  alsolanguage={[Sharp]C},
+  basicstyle=\ttfamily\small, 
+  keywordstyle=\color{blue}, 
+  stringstyle=\color{verdecpp}, 
+  commentstyle=\color{red}, 
+  extendedchars=true, 
+  showspaces=false, 
+  showstringspaces=false, 
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true, 
+  backgroundcolor=\color{green!10},
+  breakautoindent=true,
+  tabsize=2,
+%   captionpos=b,
+  xleftmargin=0pt,
+}
+
+% Definindo novas cores
+\definecolor{verdecpp}{rgb}{0,0.5,0}
+\definecolor{verdejava}{rgb}{0.25,0.5,0.35}
+\definecolor{jpurple}{rgb}{0.5,0,0.35}
+
+%% para usar varias linguagens use \lstdefinestyle{}
+\lstdefinestyle{LaTeX}{
+  language={[LaTeX]TeX},
+  basicstyle=\ttfamily\small, 
+  identifierstyle=\color{black}, 
+  keywordstyle=\color{blue}, 
+  commentstyle=\color{red}, 
+  extendedchars=true, 
+  showspaces=false, 
+  showstringspaces=false, 
+  numbers=none,
+  %numberstyle=\tiny,
+  breaklines=true, 
+  backgroundcolor=\color{yellow!20}, 
+  breakautoindent=true, 
+  captionpos=b,
+  xleftmargin=0pt,
+  frame=none,   %%frame=single
+  rframe={},
+}
+
+
+
+\lstdefinestyle{Java}
+{
+  language={Java},
+  basicstyle=\ttfamily\small, 
+  keywordstyle=\color{jpurple}\bfseries,
+  stringstyle=\color{red},
+  commentstyle=\color{verdejava},
+  morecomment=[s][\color{blue}]{/**}{*/},
+  extendedchars=true, 
+  showspaces=false, 
+  showstringspaces=false, 
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true, 
+  backgroundcolor=\color{cyan!10}, 
+  breakautoindent=true, 
+  captionpos=b,
+  xleftmargin=0pt,
+  tabsize=4
+}
