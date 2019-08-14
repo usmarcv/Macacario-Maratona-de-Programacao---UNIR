@@ -17,6 +17,21 @@
 \usepackage{listings} % exibe codigos de linguagens
 \usepackage{showexpl} % exibe codigos de figuras
 
+\makeatletter
+\newcommand\mymaketitle{%
+  \begin{titlepage}
+    \null\vfil\vskip 40\p@
+    \begin{center}
+      {\LARGE \@title \par}
+      \vskip 2.5em
+      {\large \lineskip .75em \@author \par}
+      \vskip 1.5em
+      {\large \@date \par}
+    \end{center}\par
+    \@thanks
+    \vfil\null
+  \end{titlepage}
+}
 
 \renewcommand{\lstlistingname}{Algoritmo}% Listing -> Algorithm
 \renewcommand{\lstlistlistingname}{Lista de \lstlistingname s}% List of Listings -> List of Algorithms
