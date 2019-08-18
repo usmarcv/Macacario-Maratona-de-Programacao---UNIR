@@ -12,7 +12,7 @@ int main(){
 			melhor = max(melhor, soma);
 		}
 	}
-	cout << melhor << endl;
+	cout << melhor << "\n";
 	return 0;
 }
 
